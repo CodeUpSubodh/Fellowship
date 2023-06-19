@@ -28,6 +28,8 @@ const AddPost = () => {
                 content:desc,
                 user:username,
                 time:timestamp,
+                like:0,
+                comment:'',
             };
           
           firebase.firestore().collection('PostData').add(data)

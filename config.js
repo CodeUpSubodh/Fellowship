@@ -1,8 +1,9 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import {getDatabase} from 'firebase/database'
 
-const firebaseConfig={
+const firebaseConfig = {
     apiKey: "AIzaSyDQpZofgR4KFDiogzTbOhBQBR9GsrgyNIw",
   authDomain: "fellowship-c8f2c.firebaseapp.com",
   projectId: "fellowship-c8f2c",

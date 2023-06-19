@@ -3,22 +3,23 @@ import React, { useState , useEffect} from 'react'
 import {firebase } from '../../config'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 
-
+import { useNavigation } from '@react-navigation/native';
 const Profile = () => {
-    const[username,setUsername]=useState('Not Provided')
-    useEffect(()=>{
+  const navigation=useNavigation();
+    const[username,setUsername]=useState('sri.subodh')
+    // useEffect(()=>{
 
 
-        firebase.firestore().collection('users').doc(firebase.auth().currentUser.uid).get()
-        .then((snapshot)=>{
-          if(snapshot.exists){
-            setUsername(snapshot.data())
-          }
-          else{
-            setUsername('$$$$')
-          }
-        },[])
-      })
+    //     firebase.firestore().collection('users').doc(firebase.auth().currentUser.uid).get()
+    //     .then((snapshot)=>{
+    //       if(snapshot.exists){
+    //         setUsername(snapshot.data())
+    //       }
+    //       else{
+    //         setUsername('$$$$')
+    //       }
+    //     },[])
+    //   })
     function signout(){
         navigation.navigate('Login');
         firebase.auth().signOut();
