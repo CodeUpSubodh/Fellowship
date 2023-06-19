@@ -6,7 +6,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen'
 import { useNavigation } from '@react-navigation/native';
 const Profile = () => {
   const navigation=useNavigation();
-    const[username,setUsername]=useState('sri.subodh')
+    const[username,setUsername]=useState('')
     // useEffect(()=>{
 
 

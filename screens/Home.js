@@ -130,48 +130,8 @@ const Home = () => {
 
 
 
-<View style={styles.box}>
-          <Text style={styles.username}>
-            sri.subodh
-          </Text>
-          <Text style={styles.time}>
-            19 Jun 2023 12:47:16
-          </Text>
-          <Text style={styles.itemHeading}>
-            Submision
-          </Text>
-          <Text style={styles.itemText}>Today is Submision of App</Text>
-        </View>
 
-
-
-
-
-
-
-
-        <View style={styles.box}>
-          <Text style={styles.username}>
-            looterex
-          </Text>
-          <Text style={styles.time}>
-            19 Jun 2023 04:51:32
-          </Text>
-          <Text style={styles.itemHeading}>
-            First Post from the app
-          </Text>
-          <Text style={styles.itemText}>Lets See how it goes</Text>
-        </View>
-
-      
-
-      <View style={styles.box}></View>
-
-      <View style={styles.box}></View>
-
-      <View style={styles.box}></View>
-
-      <View style={styles.box}></View>
+     
 
 </ScrollView>
     </SafeAreaView>
